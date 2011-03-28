@@ -1,0 +1,7 @@
+<div class="logo" metal:define-macro="portal_logo" i18n:domain="mmsa.department">
+	<a href="" tal:attributes="href context/@@plone_portal_state/navigation_root_url">
+	<img src="++resource++mmsa.department.images/logo.png" alt="Logotip IPSA"/>
+		<i i18n:translate="nnk">Naykovo-Nav4al'nuj Kompleks</i>
+        «<strong i18n:translate="ipsa">Instutyt Prukladnogo Sustemnogo Analizy</strong>»
+	</a>	
+</div>

@@ -1,0 +1,212 @@
+<metal:page define-macro="master">
+<metal:block define-slot="top_slot" />
+
+<tal:doctype tal:replace="structure string:&lt;!DOCTYPE html PUBLIC
+  &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+  &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;" />
+<metal:block use-macro="here/global_defines/macros/defines" />
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xml:lang="en"
+      lang="en"
+      tal:define="portal_state context/@@plone_portal_state;
+                  context_state context/@@plone_context_state;
+                  plone_view context/@@plone;
+                  lang portal_state/language;
+                  view nocall:view | nocall: plone_view;
+                  dummy python: plone_view.mark_view(view);
+                  portal_url portal_state/portal_url;
+                  checkPermission nocall: context/portal_membership/checkPermission;
+                  site_properties context/portal_properties/site_properties;
+                  ajax_load request/ajax_load | nothing"
+      tal:attributes="lang lang;
+                      xml:lang lang">
+
+  <tal:cache tal:define="charset site_properties/default_charset|string:utf-8">
+    <metal:cache use-macro="here/global_cache_settings/macros/cacheheaders">
+      Get the global cache headers located in global_cache_settings.
+    </metal:cache>
+  </tal:cache>
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"
+          tal:define="charset site_properties/default_charset|string:utf-8"
+          tal:attributes="content string:text/html;;charset=${charset}" />
+
+    <meta name="generator" content="Plone - http://plone.org" />
+
+    <!-- Internet Explorer fix, forces IE8 into newest possible rendering
+         engine even if it's on an intranet. This has to be defined before any
+         script/style tags. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+
+    <metal:baseslot define-slot="base">
+      <base tal:attributes="href here/renderBase" /><!--[if lt IE 7]></base><![endif]-->
+    </metal:baseslot>
+
+    <div tal:replace="structure provider:plone.htmlhead" />
+
+    <!-- IE6 workaround CSS/JS  -->
+    <tal:iefixstart replace="structure string:&lt;!--[if lte IE 7]&gt;" />
+        <style type="text/css" media="all" tal:condition="exists: portal/IEFixes.css"
+               tal:content="string:@import url($portal_url/IEFixes.css);">
+        </style>
+        
+        <script type="text/javascript"
+                tal:attributes="src string:${portal_url}/iefixes.js">
+	</script>
+		
+    <tal:iefixend replace="structure string:&lt;![endif]--&gt;" />
+
+   
+    <link tal:replace="structure provider:plone.htmlhead.links" />
+
+    <!-- Disable IE6 image toolbar -->
+    <meta http-equiv="imagetoolbar" content="no" />
+    
+    <tal:comment replace="nothing"> A slot where you can insert elements in the header from a template </tal:comment>
+    <metal:headslot define-slot="head_slot" />
+
+    <tal:comment replace="nothing"> A slot where you can insert CSS in the header from a template </tal:comment>
+    <metal:styleslot define-slot="style_slot" />
+
+    <tal:comment replace="nothing"> This is deprecated, please use style_slot instead. </tal:comment>
+    <metal:cssslot define-slot="css_slot" />
+
+    <tal:comment replace="nothing"> A slot where you can insert javascript in the header from a template </tal:comment>
+    <metal:javascriptslot define-slot="javascript_head_slot" />
+
+	<script type="text/javascript" src="++resource++mmsa.department.scripts/jquery-1.4.2.min.js">
+		</script>
+	<script type="text/javascript" src="++resource++mmsa.department.scripts/iasa.js">
+		</script>
+		<link rel="shortcut icon" type="image/x-icon" href="++resource++mmsa.department.images/favicon.ico" />
+	<link rel="apple-touch-icon" href="++resource++mmsa.department.images/apple-favicon.png"/>
+	
+  </head>
+
+<body tal:define="isRTL portal_state/is_rtl;
+                  sl python:plone_view.have_portlets('plone.leftcolumn', view);
+                  sr python:plone_view.have_portlets('plone.rightcolumn', view);">
+	<!--
+	<div id="portal-top" i18n:domain="plone">
+		<div tal:replace="structure provider:plone.portaltop" />
+	</div>
+	-->
+	
+<div class="holder">
+	<!-- span id="mmsa_bar" i18n:domain="plone">
+		<div tal:replace="structure provider:mmsa.bar" />
+	</span -->
+
+	<div class="page">
+		<div class="centred">
+
+		<div metal:use-macro="context/mmsa_logo/macros/portal_logo" />
+
+		<div class="prolog">
+			<div tal:replace="structure provider:mmsa.language" />
+			<div tal:replace="structure provider:mmsa.search" />
+            <div tal:replace="structure provider:mmsa.login" />
+        </div>
+		</div>
+
+		<div tal:replace="structure provider:mmsa.menu" />
+
+	<div class="info_mmsa">
+		<div class="threeColumns centred">
+			    
+              <!--  <tal:block i18n:domain="plone">
+					<div tal:replace="structure provider:mmsa.belowportaltop" />
+                        </tal:block> -->
+
+								<!-- Start of the left column -->
+		<div class="left">					
+		<!--	<tal:block condition="sl" metal:define-slot="column_one_slot">
+			<metal:portlets define-slot="portlets_one_slot">
+				<tal:block replace="structure provider:plone.leftcolumn" />
+			</metal:portlets>
+			</tal:block> -->
+			<div tal:replace="structure provider:mmsa.leftcolumn" />
+		</div>
+		
+
+								<!--  End of the left column  -->
+								<!-- Start of the right column -->
+		<div class="right">
+			<tal:block condition="sr" metal:define-slot="column_two_slot">
+			<metal:portlets define-slot="portlets_two_slot">
+				<tal:block replace="structure provider:plone.rightcolumn" />
+			</metal:portlets>
+			</tal:block>
+			<!--
+					<h4>Дивись також:</h4>
+					<ul>
+						<li><a href="#">Інформація про вступний іспит</a></li>
+					</ul>
+					<h4>Зовнешні посилання:</h4>
+					<ul>
+						<li><a href="#">Памьятка абітурієнту 2010</a></li>
+						<li><a href="#">Абітурієнти!</a></li>
+					</ul> -->
+			
+		</div>
+								<!--  End of the right column  -->
+								<!--   Start of main content   -->
+		<div class="mid">
+            <div tal:replace="structure provider:mmsa.path" />
+            <div tal:replace="structure provider:plone.contentviews" />
+            
+                <div class="shadowed">
+            		<div class="s"><b></b><i></i><s></s></div>
+                
+                <div>        
+                    <div metal:use-macro="context/global_statusmessage/macros/portal_message">Portal status message</div>
+                    <metal:block define-slot="content">
+			        <metal:block define-macro="content">
+			
+			        <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
+			        
+				<metal:slot metal:define-slot="body">
+                	<metal:header metal:define-slot="header" tal:content="nothing">Visual Header</metal:header>
+                    <metal:bodytext metal:define-slot="main">
+                    <metal:main define-macro="main">
+                    <metal:text define-slot="content-core" tal:content="nothing">Page body text</metal:text></metal:main></metal:bodytext>
+				</metal:slot>
+<!--			<metal:sub metal:define-slot="sub">
+				<div tal:replace="structure provider:plone.belowcontent" />
+			</metal:sub>
+-->				</metal:block>
+			    </metal:block>
+        </div>
+        </div>
+        </div>						<!--    End of main content    -->
+
+
+		<div tal:define="context_state context/@@plone_context_state;
+			portlet_assignable context_state/portlet_assignable"
+			tal:condition="python:not sl and not sr and portlet_assignable and checkPermission('Portlets: Manage portlets', context)">
+			<div><!-- --></div>	
+		<a class="managePortletsFallback"
+			tal:attributes="href string:${context_state/canonical_object_url}/@@manage-portlets"
+			i18n:domain="plone"
+			i18n:translate="manage_portlets_link">Manage portlets</a>
+		</div>
+	</div>
+</div>
+      
+</div>
+</div>
+
+	<tal:block i18n:domain="plone">
+		<div tal:replace="structure provider:mmsa.footer" />
+	</tal:block>
+
+    <div metal:use-macro="context/mmsa_login_form/macros/mmsa_login_form" />
+</body>
+</html>
+</metal:page>

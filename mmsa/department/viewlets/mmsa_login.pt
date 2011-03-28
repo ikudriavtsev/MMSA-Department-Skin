@@ -1,0 +1,19 @@
+<div class="auth" i18n:domain="mmsa.department">
+    <a href="#" class="login-link" tal:condition="view/anonymous" tal:attributes="href string:login_form"><tal:trans i18n:translate="loginmmsa">Log in</tal:trans></a>
+                    <tal:block condition="python: view.user_actions or not view.anonymous">
+                    <tal:user condition="not: view/anonymous">
+                    <a tal:attributes="href view/homelink_url"><img src="" tal:replace="structure context/user.gif" />
+                        <tal:user_name content="view/user_name">user_name</tal:user_name></a>
+                    </tal:user>
+                    <tal:actions condition="not: view/anonymous">
+                    <tal:user_actions repeat="action view/user_actions">
+                        <a href="" tal:attributes="href action/url" tal:content="action/title">action_title</a>
+                    </tal:user_actions>
+                    </tal:actions>
+
+                    
+                    <!--
+					<a href="/author/cah4a" class="profile-link">Санча</a>
+                    <a href="/logout" class="logout-link">Вийти</a>-->
+                    </tal:block>
+</div>

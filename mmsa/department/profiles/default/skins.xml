@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="MMSA Department Skin">
+
+ <object name="mmsa_department_custom_images"
+    meta_type="Filesystem Directory View"
+    directory="mmsa.department:skins/mmsa_department_custom_images"/>
+ <object name="mmsa_department_custom_templates"
+    meta_type="Filesystem Directory View"
+    directory="mmsa.department:skins/mmsa_department_custom_templates"/>
+ <object name="mmsa_department_styles"
+    meta_type="Filesystem Directory View"
+    directory="mmsa.department:skins/mmsa_department_styles"/>
+ <object name="mmsa_department_scripts"
+    meta_type="Filesystem Directory View"
+    directory="mmsa.department:skins/mmsa_department_scripts"/>
+
+
+ <skin-path name="MMSA Department Skin" based-on="Plone Default">
+  <layer name="mmsa_department_custom_images"
+     insert-after="custom"/>
+  <layer name="mmsa_department_custom_templates"
+     insert-after="mmsa_department_custom_images"/>
+  <layer name="mmsa_department_styles"
+     insert-after="mmsa_department_custom_templates"/>
+  <layer name="mmsa_department_scripts"
+     insert-after="mmsa_department_styles"/>
+ </skin-path>
+
+</object>

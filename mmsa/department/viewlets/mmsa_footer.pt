@@ -1,0 +1,13 @@
+<metal:block define-macro="portal_footer" i18n:domain="mmsa.department">
+
+<ul class="footer" tal:define="lang context/@@plone_portal_state/language">
+	<li><a href="#" i18n:translate="vac">Vakansiji</a></li>
+	<li><a href="#" tal:attributes="href string:${context/@@plone_portal_state/navigation_root_url}/search" i18n:translate="search">Powyk</a></li>
+    <li>
+        <a href="#" tal:condition="python: lang == 'ru' or lang == 'uk'" tal:attributes="href string: ${context/@@plone_portal_state/navigation_root_url}/about-iasa-$lang/what-is-iasa/contact" i18n:translate="cont">Kontaktu</a>
+        <a href="#" tal:condition="python: lang == 'en'" tal:attributes="href string: ${context/@@plone_portal_state/navigation_root_url}/about-iasa/what-is-iasa/contact" i18n:translate="cont">Kontaktu</a>
+    </li>
+	<li><a href="#" i18n:translate="about">Pro sajt</a></li>
+</ul>
+
+</metal:block>

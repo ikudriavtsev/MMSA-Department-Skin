@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts">
+
+<!--javascript cacheable="False" compression="none" cookable="True" enabled="1" expression=""
+ id="++resource++mmsa.department.scripts/iasa.js" / -->
+<!-- javascript cacheable="False" compression="none" cookable="True" enabled="1" expression=""
+ id="++resource++mmsa.department.scripts/jquery-1.4.2.min.js" / -->
+
+</object>

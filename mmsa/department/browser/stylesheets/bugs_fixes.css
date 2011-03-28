@@ -1,0 +1,13 @@
+#mmsa_bar {
+background: none;
+}
+#portal-personaltools {
+background: none; border: none; position: absolute; left: 10px; margin: 0px; padding: 0px; width: 12%; text-align: left;
+}
+#portal-siteactions {
+background: none; border: none; position: absolute; float: right; margin-left: 155px; padding: 0;
+}
+//#portal-personaltools a, #portal-siteactions a { color: black !important; }
+#portal-personaltools a:hover, #portal-siteactions a:hover { background: none !important; border: none !important; }
+div.close { display: none !important; }
+

@@ -1,0 +1,47 @@
+title:string=MMSA Department Skin's color, font, logo and border defaults
+
+plone_skin:string=MMSA Department Skin
+
+logoName:string=logo.png
+
+fontFamily:string="Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif
+fontBaseSize:string=69%
+fontColor:string=Black
+fontSmallSize:string=90%
+
+backgroundColor:string=transparent
+
+linkColor:string=#0080ff
+linkActiveColor:string=#ff8309
+linkVisitedColor:string=#0080ff
+
+borderWidth:string=1px
+borderStyle:string=solid
+borderStyleAnnotations:string=solid
+
+globalBorderColor:string=#8cacbb
+globalBackgroundColor:string=#dee7ec
+globalFontColor:string=#436976
+
+headingFontFamily:string="Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif
+
+contentViewBorderColor:string=#74ae0b
+contentViewBackgroundColor:string=#cde2a7
+contentViewFontColor:string=#578308
+
+inputFontColor:string=Black
+
+textTransform:string=none
+
+evenRowBackgroundColor:string=#eef3f5 
+oddRowBackgroundColor:string=transparent
+
+notifyBorderColor:string=#ffa500
+notifyBackgroundColor:string=#ffce7b
+
+discreetColor:string=#76797c
+helpBackgroundColor:string=#ffffe1
+
+portalMinWidth:string=70em
+columnOneWidth:string=100%
+columnTwoWidth:string=0px

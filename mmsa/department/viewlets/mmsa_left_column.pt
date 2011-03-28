@@ -1,0 +1,27 @@
+<tal:block tal:repeat="level1 view/level1">
+	<tal:block omit-tag="" condition="python: view.selected_portal_tab == level1['id']">
+		<tal:block omit-tag="" condition="level1/level2">
+			<tal:tabs tal:repeat="level2 level1/level2">
+            <tal:block condition="python: level2['id'] == view.parent_id">
+            <h4 tal:content="level2/name">level2 Name</h4>
+               	<tal:block omit-tag="" condition="level2/level3">
+	<ul>
+        <tal:block repeat="level3 level2/level3">
+        <li tal:attributes="class python: level3['id'] == context.id and 'selected' or ''">
+        <a href="#" tal:attributes="href level3/url" tal:condition="python: not level3['level4'] and not level3['id'] == context.id" tal:content="level3/name">level3 Name</a>
+        <tal:block omit-tag="" condition="python: level3['id'] == context.id"> <span tal:replace="level3/name" /> </tal:block>
+            <tal:block condition="python: level3['level4'] and not level3['id'] == context.id"><h5 tal:content="level3/name">level3 Name</h5>
+            <ul>
+                <li tal:repeat="level4 level3/level4" tal:attributes="class python: level4['id'] == context.id and 'selected' or ''">
+                <a href="#" tal:condition="python: not level4['id'] == context.id" tal:attributes="href level4/url" tal:content="level4/name">level4 Name</a> <span tal:omit-tag="python: level4['id'] == context.id" tal:replace="level4/name" />
+                </li>
+            </ul>
+        </tal:block>
+        </li> </tal:block>
+	</ul>
+				</tal:block>
+            </tal:block>
+			</tal:tabs>
+			</tal:block>
+	</tal:block>
+</tal:block>

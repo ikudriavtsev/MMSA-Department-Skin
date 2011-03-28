@@ -1,0 +1,147 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+<browser:viewletManager
+        name="mmsa.belowportaltop"
+        provides=".interfaces.IBelowPortalTop"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+<browser:viewletManager
+        name="mmsa.search"
+        provides=".interfaces.IMmsaSearch"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+<browser:viewletManager
+        name="mmsa.language"
+        provides=".interfaces.IMmsaLanguage"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+<browser:viewletManager
+        name="mmsa.menu"
+        provides=".interfaces.IMmsaMenu"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+<browser:viewletManager
+        name="mmsa.leftcolumn"
+        provides=".interfaces.IMmsaLeftColumn"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+<!-- browser:viewletManager
+        name="mmsa.bar"
+        provides=".interfaces.IMmsaBar"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        / -->
+<browser:viewletManager
+        name="mmsa.footer"
+        provides=".interfaces.IMmsaFooter"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+<browser:viewletManager
+        name="mmsa.path"
+        provides=".interfaces.IMmsaPath"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+<browser:viewletManager
+        name="mmsa.login"
+        provides=".interfaces.IMmsaLogin"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+
+<browser:viewlet
+        name="mmsa.below_portal_top"
+        manager=".interfaces.IBelowPortalTop"
+        class=".common.BelowPortalTop"
+        permission="zope2.View"
+        layer="mmsa.department.browser.interfaces.IThemeSpecific"
+        />
+<browser:viewlet
+        name="plone.mmsa_search"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class=".common.MmsaSearch"
+        permission="zope2.View" 
+        layer="mmsa.department.browser.interfaces.IThemeSpecific"
+        />
+<browser:viewlet
+        name="plone.site_actions"
+        manager=".interfaces.IMmsaBar"
+        class=".common.SiteActionsViewlet"
+        permission="zope2.View"
+        layer="mmsa.department.browser.interfaces.IThemeSpecific"
+        />
+<browser:viewlet
+        name="mmsa.footer.viewlet"
+        for="*"
+        manager=".interfaces.IMmsaFooter"
+        template="mmsa_footer.pt"
+        permission="zope.Public"
+        layer="mmsa.department.browser.interfaces.IThemeSpecific"
+        />
+<browser:viewlet
+        name="mmsa.department.search"
+        manager=".interfaces.IMmsaSearch"
+        class=".common.MmsaSearch"
+        permission="zope2.View" 
+        layer="mmsa.department.browser.interfaces.IThemeSpecific"
+        />
+<browser:viewlet
+        name="mmsa.department.menu"
+        manager=".interfaces.IMmsaMenu"
+        class=".common.GlobalSectionsViewlet"
+        permission="zope2.View"
+        layer="mmsa.department.browser.interfaces.IThemeSpecific"
+        />
+<browser:viewlet
+        name="mmsa.department.path"
+        manager=".interfaces.IMmsaPath"
+        class=".common.MmsaPath"
+        permission="zope2.View"
+        layer="mmsa.department.browser.interfaces.IThemeSpecific"
+        />
+<browser:viewlet
+        name="mmsa.left_column"
+        manager=".interfaces.IMmsaLeftColumn"
+        class=".common.MmsaLeftColumn"
+        permission="zope2.View"
+        layer="mmsa.department.browser.interfaces.IThemeSpecific"
+        />
+<!-- browser:viewlet
+        name="plone.personal_bar"
+        manager=".interfaces.IMmsaBar"
+        class=".common.PersonalBarViewlet"
+        permission="zope2.View" 
+        layer="mmsa.department.browser.interfaces.IThemeSpecific"
+        / -->
+<browser:viewlet
+        name="mmsa.department.language"
+        manager=".interfaces.IMmsaLanguage"
+        class=".common.MmsaLanguage"
+        permission="zope2.View"
+        layer="mmsa.department.browser.interfaces.IThemeSpecific"
+        />
+<browser:viewlet
+        name="mmsa.department.login"
+        manager=".interfaces.IMmsaLogin"
+        class=".common.PersonalBarViewlet"
+        permission="zope2.View"
+        layer="mmsa.department.browser.interfaces.IThemeSpecific"
+        />
+<browser:viewlet
+        name="plone.contentviews"
+        manager="plone.app.layout.viewlets.interfaces.IContentViews"
+        class="plone.app.layout.viewlets.common.ContentViewsViewlet"
+        permission="zope2.View"
+        template="mmsa_contentviews.pt"
+        layer="mmsa.department.browser.interfaces.IThemeSpecific"
+        />
+
+</configure>

@@ -1,0 +1,5 @@
+ <tal:block i18n:domain="plone">
+        <h4 tal:content="view/data/header">header</h4>
+        <ul tal:replace="structure view/data/text" />
+ </tal:block>
+

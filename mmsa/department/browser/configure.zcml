@@ -1,0 +1,34 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="mmsa.department">
+
+    <!-- 'MMSA Department Skin' Zope 3 browser layer -->
+    <interface
+        interface=".interfaces.IThemeSpecific"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        name="MMSA Department Skin"
+        />
+
+    <!-- Viewlets registration -->
+    <!-- Zope 3 browser resources -->
+
+    <!-- Resource directory for images -->
+    <browser:resourceDirectory
+        name="mmsa.department.images"
+        directory="images"
+        layer=".interfaces.IThemeSpecific"
+        />
+    <!-- Resource directory for stylesheets -->
+    <browser:resourceDirectory
+        name="mmsa.department.stylesheets"
+        directory="stylesheets"
+        layer=".interfaces.IThemeSpecific"
+        />
+    <!-- Resource directory for scripts -->
+    <browser:resourceDirectory
+        name="mmsa.department.scripts"
+        directory="scripts"
+        layer=".interfaces.IThemeSpecific"
+        />
+</configure>

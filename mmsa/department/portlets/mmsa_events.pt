@@ -1,0 +1,67 @@
+<dl class="portlet portletEvents"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="plone">
+<span class="portletTopLeft"></span>
+    <dt class="portletHeader">
+        
+        <a href=""
+           tal:attributes="href view/all_events_link"
+           class="tile"
+           i18n:translate="Events">
+            Upcoming Events
+        </a>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <tal:events tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime"
+                tal:repeat="obj view/published_events">
+    <dd class="portletItem"
+        tal:define="oddrow repeat/obj/odd;
+                    plone_view context/@@plone;
+                    getIcon nocall:plone_view/getIcon;
+                    item_icon python:getIcon(obj);"
+        tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
+        <a href="#"
+           class="tile"
+           tal:attributes="href obj/getURL;
+                           title obj/Description">
+            <img tal:replace="structure item_icon/html_tag" />
+            <span tal:replace="obj/pretty_title_or_id">
+             Some Event
+            </span>
+        </a>
+      <div class="portletItemDetails">
+                <tal:condition condition="obj/Description">
+                    <span tal:content="obj/Description">Location</span>
+                </tal:condition>
+      </div>
+
+    </dd>
+    </tal:events>
+
+    <dd class="portletFooter"
+           tal:condition="view/prev_events_link">&larr;
+        <a href=""
+           tal:attributes="href view/prev_events_link"
+           class="tile">
+            <span i18n:translate="box_previous_events">
+                Previous events&hellip;
+            </span>
+        </a>
+    </dd>
+
+    <dd class="portletFooter"> 
+   <span class="arrow">&larr;</span>
+        <a href=""
+           class="tile"
+           tal:attributes="href view/all_events_link"
+           i18n:translate="box_upcoming_events">
+                Upcoming events&hellip;
+        </a>
+        
+        <span class="portletBottomRight"></span>
+    </dd>
+<span class="portletBottomLeft"></span>
+</dl>

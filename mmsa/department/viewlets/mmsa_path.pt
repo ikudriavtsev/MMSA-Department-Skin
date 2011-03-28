@@ -1,0 +1,14 @@
+<div i18n:domain="mmsa.department" class="path" tal:condition="view/view_path">
+    <a href="#" tal:attributes="href context/@@plone_portal_state/portal_url" i18n:translate="home">home</a> &rarr;
+    <tal:block repeat="obj view/path">
+    <tal:block condition="not: obj/is_last">
+    <a href="#" tal:attributes="href obj/url" tal:condition="obj/is_suitable_view_mode" tal:content="obj/name">name</a>
+    <span tal:condition="not: obj/is_suitable_view_mode" tal:content="obj/name">name</span>
+    &rarr;
+        </tal:block>
+        <tal:block condition="obj/is_last">
+            <h2 tal:content="obj/name">name</h2>
+        </tal:block>
+    </tal:block>
+</div>
+<!-- div><span tal:replace="view/test" /></div -->

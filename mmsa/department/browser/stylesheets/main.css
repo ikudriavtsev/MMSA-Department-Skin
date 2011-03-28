@@ -1,0 +1,342 @@
+/* RESET */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body{line-height:1;}
+ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+:focus{outline:0;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+a{color:black;}
+body,html{width:100%;height:100%;margin:0px;padding:0px;}
+img{border:0px;}
+/*end*/
+
+
+html, body { margin: 0; height: 100%; }
+
+body { font: 14px/1.4 Segoe UI, Arial, sans-serif; background: url(++resource++mmsa.department.images/bgTop.png) top repeat-x; }
+
+a { color: #0080ff; }
+a:hover { color: #0052c9; }
+a:active { color: #ff8309; }
+
+.logo { font: 30px Constantia, Georgia, serif; position: relative; padding: 23px 0 10px 73px; color: #999; margin-left: 20px; }
+.logo img { position: absolute; top: 0px; left: 0; }
+.logo i { font-size: 18px; position: absolute; left: 92px; top: 0; color: black; }
+.logo strong { font-weight: normal; color: black; }
+.logo a { text-decoration: none; color: #999; }
+h2 { font: italic 18px Constantia, Georgia, serif !important; color: #444; }
+h3 { color: #595959; font: 16px Constantia, Georgia, serif !important; margin-bottom: 15px; }
+h4 { font: 14px Constantia, Georgia, serif !important; margin: 15px 0 5px; color: #333; }
+h5 { font: bold 13px Constantia, Georgia, serif !important; color: #333; }
+h6 { font: bold italic 12px Constantia, Georgia, serif !important; color: #808080; }
+
+p { margin: 10px 0; }
+
+h1 { padding: 0; margin: 0 0 20px; color: #ff8000; font-size: 20px; font-style: italic; }
+
+.path { color: black; color: #bbb; font-size: 12px; font-family: Calibri; margin: 0 20px 5px;  }
+.path h2 { display: inline; font-size: 16px; color: black; }
+.path span { color: #777; font-family: Segoe UI, Arial, sans-serif; }
+.path a { padding: 1px 3px; color: #555; font-family: Segoe UI, Arial, sans-serif; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; }
+.path a:hover { color: #333; }
+.path a:active { color: #ff8309; }
+
+.main { padding: 60px 0 90px; }
+.centred { margin: 0 auto; max-width: 1200px; width: 90%; }
+.holder { background: url(++resource++mmsa.department.images/bgBottom.png) bottom repeat-x; min-height: 100%; margin-bottom: -40px; position: relative; min-width: 980px; }
+
+.content { padding: 20px 325px 80px 25px; }
+
+.footer { background: url(++resource++mmsa.department.images/footerLine.png) top center no-repeat; width: 100%; text-align: center; height: 40px; line-height: 39px; position: relative; }
+.footer li { display: inline; }
+.footer a { color: #262626; font-size: 12px; margin: 10px }
+
+.prolog { position: absolute; top: 10px; right: 10px; margin: 0 5px 0 0; }
+.prolog div { float: left; margin: 0 5px 0 25px; position: relative; display: block; }
+
+.prolog div div { float: none; margin: auto; }
+.prolog .left { height: 37px; width: 5px; position: absolute; top: 0; left: -5px; background: url(++resource++mmsa.department.images/prologPanel.png) top left; }
+.prolog .right { height: 37px; width: 5px; position: absolute; top: 0; right: -5px; background: url(++resource++mmsa.department.images/prologPanel.png) top right; }
+
+.prolog .language { font-size: 11px; padding: 8px 3px 10px 1px; line-height: 22px; background: url(++resource++mmsa.department.images/prologBg.png); height: 19px; }
+.prolog .language li { display: inline; margin: 0 5px; }
+.prolog .language li img { width: 19px; height: 16px; vertical-align: -5px; opacity: .3 }
+.prolog .language li .selected { opacity: 1 }
+
+.search { font-size: 12px; padding: 0; line-height: 1; background: url(++resource++mmsa.department.images/prologBg.png); height: 37px; position: relative; width: 220px; }
+.search p { margin: 0; }
+.search input { width: 162px; padding: 0; font-size: 12px; margin: 0; height: 16px;
+line-height: 1; position: absolute; left: 7px; top: 10px; }
+.search button { width: 33px; position: absolute; padding: 0; margin: 0; right: 4px; top: 9px; height: 21px; }
+.search button span { font-size: 18px; color: #444; position: relative; top: -2px; left: -1px; }
+html:not([lang*=""]):not(:only-child) .prolog .search button span { top: -4px; }
+@-moz-document url-prefix() { .prolog .search button span { top: -6px !important; } }
+
+.prolog .auth { position: absolute; right: 0; top: 100%; margin-top: 10px; }
+.prolog .auth>a { margin-left: 7px; }
+.login-link { background: url(++resource++mmsa.department.images/login.png) left center no-repeat; padding-left: 12px; line-height: 12px; padding-bottom: 3px; font-size: 12px; color: #0080ff; opacity: .5; }
+.login-link:hover { opacity: 1; }
+.logout-link { background: url(++resource++mmsa.department.images/logout.png) left center no-repeat; padding-left: 15px; line-height: 12px; padding-bottom: 3px; font-size: 12px; color: #0080ff; opacity: .5; }
+.logout-link:hover { opacity: 1; }
+.profile-link { background: url(++resource++mmsa.department.images/profile.png) left center no-repeat; padding-left: 14px; line-height: 12px; padding-bottom: 3px; font-size: 12px; color: #ff8000; opacity: .5; }
+.profile-link:hover { opacity: 1; color: #ff8000 }
+
+.bubble { background: url(++resource++mmsa.department.images/blackTranspBg.png); min-height: 100%; position: fixed; top: 0; left: 0; width: 100%; z-index: 200; display: none; }
+.bubble>div { display: table-row; }
+.bubble>div>div { display: table-cell; vertical-align: middle; }
+.bubble>div>div>div { background: #d9cebf; border-radius: 3px; -khtml-border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; padding: 18px 20px; margin: 0 auto; width: 40%; position: relative; }
+.bubble>div>div>div>.close { position: absolute; right: -5px; top: -6px; font-size: 16px; color: #444; line-height: 16px; font-weight: bold;
+width: 21px; height: 21px; text-align: center;
+text-decoration: none; background: #d9cebf; border: 1px solid transparent; 
+border-radius: 21px; -moz-border-radius: 21px; -webkit-border-radius: 21px; -khtml-border-radius: 21px; }
+.bubble>div>div>div>.close:hover { color: black; box-shadow: 0 0 3px black; -khtml-box-shadow: 0 0 3px black; -moz-box-shadow: 0 0 3px black; -webkit-box-shadow: 0 0 3px black; }
+
+
+.twoColums { overflow: hidden; }
+.twoColums .left { float: left; width: 100%; margin-right: -300px; }
+.twoColums .right { float: right; width: 253px; padding-top: 29px; }
+
+
+#metabanner { height: 170px; background: url(++resource++mmsa.department.images/metabaner.png) repeat-x; position: relative; padding-top: 5px; margin: 0 auto; }
+#metabanner .corners i { display: block; width: 22px; height: 170px; position: absolute; left: -22px; top: 0px; background: url(++resource++mmsa.department.images/metabanerCorners.png) left; }
+#metabanner .corners b { display: block; width: 22px; height: 170px; position: absolute; right: -22px; top: 0px; background: url(++resource++mmsa.department.images/metabanerCorners.png) right; }
+#metabanner .inside { height: 160px; margin: 0 -17px; position: relative; overflow: hidden; }
+#metabanner .inside div { display: none; position: absolute; height: 160px; width: 100%; left: 0px; top: 0px; }
+#metabanner .inside .current { display: block; }
+
+#metabanner .nav {  position: absolute; z-index: 3; left: 0; bottom: -10px; width: 100%; height: 25px; }
+
+#metabanner .list { width: 100%; position: absolute; z-index: 4; bottom: 3px; left: 0; text-align: center; }
+#metabanner .list a { margin: 0 5px; opacity: .6; color: white; text-decoration: none; font-size: 20px; text-shadow: 0 1px 0 black;  }
+#metabanner .list .current { opacity: 1; font-size: 30px; vertical-align: -3px; }
+
+#metabanner  h3 { color: white; text-shadow: 1px 1px 0px black; position: absolute; top: 12px; left: 15px; }
+#metabanner a { color: white; }
+#metabanner ol { color: #ccc; line-height: 1.3; font-size: 14px; position: absolute; right: 50px; bottom: 30px; line-height: 20px; padding: 7px 30px; margin: 0; }
+
+#metabanner ol, #metabanner .text { font-size: 13px; border-radius: 3px; -khtml-border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; background: url(++resource++mmsa.department.images/blackTranspBg.png); }
+
+#metabanner .text h3 { display: inline; }
+#metabanner .text { position: absolute; color: white; line-height: 1.2;  width: 300px; padding: 5px 10px 10px; right: 50px; bottom: 30px; margin: 0; }
+
+#metabanner .world { background: url(metabanner/facultets.png) center; }
+#metabanner .facultets { background: url(metabanner/1.png) center; }
+#metabanner .k14 { background: url(metabanner/14.png) center; }
+#metabanner .k26 { background: url(metabanner/26.png) center; }
+#metabanner .k35 { background: url(metabanner/35.png) center; }
+ 
+#metabanner_prev { position: absolute; z-index: 5; bottom: 10px; left: -17px; font: bold 18px Calibri, Arial; text-decoration: none; background: url(++resource++mmsa.department.images/blackTranspBg.png);  padding: 2px 5px;
+border-radius: 0 3px 0 0; -khtml-border-radius: 0 3px 0 0; -moz-border-radius: 0 3px 0 0; -webkit-border-radius:  0 3px 0 0; }
+#metabanner_next { position: absolute; z-index: 5; bottom: 10px; right: -17px; font: bold 18px Calibri, Arial; text-decoration: none; background: url(++resource++mmsa.department.images/blackTranspBg.png); padding: 2px 5px; 
+border-radius: 3px 0 0 0; -khtml-border-radius: 3px 0 0 0; -moz-border-radius: 3px 0 0 0; -webkit-border-radius: 3px 0 0 0; }
+.section { overflow: hidden; margin: 35px 0; font-size: 14px; }
+.section .l { float: left; width: 45%; }
+.section .r { float: right; width: 45%; }
+.section ul { margin: 5px 0 10px; font-size: 12px; }
+.section li { display: inline; margin-right: 5px; }
+
+
+#courses { margin-top: 60px; }
+#courses .stages { width: 100%; }
+#courses .stages td { text-align: center; width: 17%; }
+#courses .stages a { text-decoration: none; color: #959595; font-size: 11px; display: inline-block; vertical-align: top; padding: 10px 4px 4px; height: 73px; }
+#courses .stages span { width: 38px; height: 38px; display: inline-block; color: white; font-size: 10px; text-align: center; margin: 0 auto; background: url(++resource++mmsa.department.images/course.png); }
+#courses .stages span b { font: 30px Constantia, Georgia, serif; display: block; line-height: 24px; }
+#courses .stages strong { font-size: 11px; font-weight: normal; color: black; }
+#courses .stages .first { text-align: left; width: auto; padding-left: 0; white-space: nowrap; }
+#courses .stages .first span { background-color: #ffbd54; }
+#courses .stages .mid span { background-color: #ff8309; }
+#courses .stages .upperMid span { background-color: #a53f19; }
+#courses .stages .add span { background-color: #5f0000; }
+#courses .stages .last { text-align: right; padding-right: 0; width: auto; }
+#courses .stages .last span { background-color: #0080ff;  }
+#courses .stages .last span b { position: relative; top: 5px; }
+#courses .stages .selected a { position: relative; top: 1px; z-index: 1; padding: 13px 13px 0; background-color: #f2f2f2; 
+	-moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px 5px 0 0; -khtml-border-radius: 5px 5px 0 0; 
+	border-radius: 5px 5px 0 0; border-top: 1px solid #ccc; }
+
+#courses .discription { background-color: #f2f2f2; border-radius: 5px; 
+-moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; 
+border-top: 1px solid #ccc; }
+#courses .discription thead td { font: 20px Constantia, Georgia, serif; text-align: center; padding: 10px; }
+#courses .discription tbody td { padding: 5px 10px; }
+#courses .discription ul { list-style: disc; margin: 10px 0 0 15px; font-size: 12px; line-height: 20px; }
+#courses .discription div { text-align: center; padding: 14px 10px 10px; }
+#courses .column { width: 30%; display: inline-block; vertical-align: top; min-width: 180px; padding: 2px 10px; margin-bottom: 10px; 
+border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px;
+}
+#courses .column:hover { background: white; }
+#courses .column:hover h4 { border-bottom: 1px solid #ddd;  }
+#courses .column h4  { font-size: 17px; color: #595959; margin: 0; padding: 4px 0 5px; border-bottom: 1px solid #f2f2f2; }
+#courses .column p { text-align: left; margin: 3px 0 5px; line-height: 18px; font-size: 13px; }
+#courses .column ul { text-align: left; }
+#courses .column li { margin: 5px 0; line-height: 1; }
+#courses .column li a { text-decoration: none; }
+#courses .column li a:hover { text-decoration: underline; }
+
+.panel { position: relative; margin-bottom: 40px; background: url(++resource++mmsa.department.images/panel.png); padding: 5px 10px 5px 20px; width: 223px; // zoom: 1; }
+.panel .corners i { display: block; width: 100%; height: 6px; background: url(++resource++mmsa.department.images/panelCorners.png) top; position: absolute; top: -6px; left: 0px; }
+.panel .corners b { display: block; width: 100%; height: 6px; background: url(++resource++mmsa.department.images/panelCorners.png) bottom;  position: absolute; bottom: -6px; left: 0px;  }
+
+.login { height: 141px; font-size: 11px; }
+.login p { overflow: hidden; margin: 0 0 13px; }
+.login label { width: 55px; display: block; float: left; text-align: right; color: #4c4c4c; line-height: 24px; }
+.login p input { width: 145px; margin-left: 10px; font-size: 12px; }
+.login a { position: absolute; bottom: 14px; left: 40px; }
+.login .submit { position: absolute; bottom: 10px; right: 18px; font-size: 11px; width: 63px; }
+
+.logged { height: 141px }
+.logged  .portraitPhoto { margin-top: -3px; float: left; margin-right: 20px; }
+.logged a { font-size: 12px; line-height: 30px; }
+
+.events { font-size: 11px; color: #333333; }
+.events p { margin-bottom: 5px; font-size: 12px; }
+.events .navi { margin: 15px 0 5px; }
+.events .navi span { font-family: Calibri; }
+.events .navi a { color: #ff6100; }
+.events>.twitt { overflow: hidden; margin-bottom: 20px; margin-left: -5px; }
+.events>.twitt>div { overflow: hidden; }
+.events p { margin: 2px 0; }
+.events h6 { color: black; margin: 0; }
+.events h6 span { color: #666; font: 10px Segoe UI, arial, sans-serif; }
+.events .date { font-size: 10px; color: #666; }
+.events>.twitt>img { float: left; margin: 2px 5px 2px 0; border-top: 1px solid #bbb; border-bottom:  1px solid white; 
+	border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -khtml-border-radius: 2px; }
+.retweet { background: url(++resource++mmsa.department.images/retweet.png) no-repeat; width: 10px; height: 6px; display: inline-block; margin-right: 2px; }
+
+.rss { background: url(++resource++mmsa.department.images/rss.png); display: block; width: 20px; height: 20px; }
+.panel .rss { position: absolute; top: 5px; right: 10px;  }
+
+.pay { padding: 0 20px; }
+.pay sup { margin-left: 3px; font-weight: bold; font-style: italic; }
+.pay div a { float: left; display: block; text-decoration: none; color: black; font-size: 11px; }
+.pay img { display: block; margin-bottom: 3px; }
+.pay .last { float: right; }
+.pay .last img { margin: 0 0 3px auto; }
+
+.menu { text-align: center; border-bottom: 2px solid #d9cebf; font: 15px/23px Constantia, Georgia, serif; margin-top: 14px; position: relative; height: 28px; }
+.menu li { display: inline-block; margin: 0 20px 0 0; padding-left: 20px; position: relative; vertical-align: 0; }
+.menu a { text-decoration: none; color: black; position: relative; z-index: 10; }
+.menu .curr { background: url(++resource++mmsa.department.images/mainMenu.gif) left; vertical-align: -5px; display: inline-block; // display: inline; height: 23px; }
+.menu .curr>a {  background: url(++resource++mmsa.department.images/mainMenu.gif) right; margin-right: -15px; padding-right: 20px; color: #404040; display: inline-block; height: 23px; }
+.menu .sel { padding-left: 20px; position: relative; background: url(++resource++mmsa.department.images/mainMenu.gif) left; vertical-align: -5px; display: inline-block; // display: inline; height: 23px; }
+.menu .sel>a {  background: url(++resource++mmsa.department.images/mainMenu.gif) right; margin-right: -15px; padding-right: 20px; color: #404040; display: inline-block; height: 23px; }
+
+.menu .curr .secondMenu { display: block; }
+.secondMenu { display: none; position: absolute; left: 50%; // bottom: -21px; margin: 2px 0 0 8px; }
+.secondMenu div { position: relative; left: -50%; background: url(++resource++mmsa.department.images/secondMenu.gif) top left no-repeat; padding-left: 20px; height: 23px; }
+.secondMenu .w { position: static; background: url(++resource++mmsa.department.images/secondMenu.gif) bottom right no-repeat; padding: 0 10px 0 0; height: 23px; }
+.secondMenu ul { white-space: nowrap; font: 13px/23px Segoe UI, Arial, sans-serif; color: #404040; padding: 0; background: #d9cebf; }
+.secondMenu li { margin: 0 10px 0 0; padding: 0; }
+.secondMenu a { text-decoration: underline; color: black; position: relative; top: -1px; }
+
+.jsBg { position: absolute; z-index: 9; overflow: hidden; z-index: 4; top: 0px; height: 28px; padding-right: 15px; left: 3px; width: 100%; }
+.jsBg .sel { top: 5px; display: block; }
+.jsBg .sel a { display: block; }
+
+.page { padding-top: 30px; overflow-x: hidden; }
+.page h1 { margin-left: 30px; }
+.info_mmsa { background: url(++resource++mmsa.department.images/bgInside.png) top repeat-x; min-height: 400px; }
+
+.info_mmsa .left, .info_mmsa .right { font-size: 12px; max-width: 15%; margin-top: 15px; min-width: 12%; }
+.info_mmsa .left h4, .info_mmsa .right h4 { font-style: italic; margin: 10px 0 10px 0; } 
+.info_mmsa .left h5, .info_mmsa .right h5 { font-style: italic; margin: 15px 0 5px 10px; font-size: 12px; }
+.info_mmsa .left ul h5, .info_mmsa .right ul h5, .info_mmsa .left li>ul, .info_mmsa .right li>ul { margin-left: 0; }
+.info_mmsa .left ul+h5, .info_mmsa .right ul+h5 { margin-top: -15px; }
+.info_mmsa .left ul, .info_mmsa .right ul { margin: 0 0 40px 10px; line-height: 1.5; }
+.info_mmsa .left .selected { background: #d9cebf; padding: 3px 5px 4px; display: inline-block; line-height: 1; margin: 5px 0; color: #404040;
+	border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -khtml-border-radius: 3px; }
+ 
+.info_mmsa .mid ol { margin: 15px 30px; }
+.info_mmsa .mid ul { margin: 15px 30px; list-style-type: disc; }
+.info_mmsa .mid ul ul { list-style-type: square; }
+
+table.plain, table.plain td, table.plain th { padding: 5px; }
+ 
+.info_mmsa .search { margin: -10px auto 20px; width: 360px; }
+.info_mmsa .search input { width: 300px; }
+.search-result-info { font-size: 12px; color: #666; width: 350px; margin: 0 auto 10px; }
+.info_mmsa .searchResults { width: 350px; margin: 0 auto; line-height: 16px; }
+.info_mmsa .searchResults dt { font-size: 14px; margin: 5px 0 0; }
+.info_mmsa .searchResults dd { font-size: 12px; margin: 3px 0 0; color: #666; }
+.info_mmsa .searchResults img { vertical-align: middle; }
+ 
+.shadowed { position: relative; padding: 18px; min-height: 400px; }
+.shadowed>div { background: white; padding: 0 7px; }
+.shadowed .s b{ background: url(++resource++mmsa.department.images/shadow.png) top repeat-y; display: block; height: 18px; position: absolute; top: 0px; left: 18px; right: 18px; }
+.shadowed .s i{ background: url(++resource++mmsa.department.images/shadow.png) left -18px no-repeat; display: block; width: 18px; position: absolute; top: 0px; left: 0px; height: 500px; }
+.shadowed .s s{ background: url(++resource++mmsa.department.images/shadow.png) right -18px no-repeat; display: block; width: 18px; position: absolute; top: 0px; right: 0px; height: 500px; }
+
+.info_mmsa .mid { font: 14px/1.4 Segoe UI, Arial, sans-serif; }
+.info_mmsa h3 { color: black; margin-top: 5px; font: 24px Constantia, Georgia, serif; }
+
+.hidden { display: none; }
+.text-image { background: #d0e9fd; float: left; padding: 10px 10px 5px; font-style: italic; font-size: 11px; color: #555; text-align: center;
+ margin: 5px 20px 10px 0; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px;
+ max-width: 250px;
+ }
+.text-image.r { margin: 5px 0 10px 20px; float: right; }
+.text-image img { display: block; margin-bottom: 4px; margin: 0 auto; }
+
+.threeColumns { padding-bottom: 80px; }
+.threeColumns .left { float: left; margin-right: 32px; margin-top: 75px; }
+.threeColumns .right { float: right; margin-left: 32px; margin-top: 75px; }
+.threeColumns  .mid { overflow: hidden; padding-top: 50px; position: relative; }
+
+.portraitPhoto { border-top: 1px solid #bbb; border-bottom:  1px solid white; 
+	border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -khtml-border-radius: 2px; }
+
+sup { vertical-align: text-top; font-size: 75%; }
+
+#login-form { width: 100%; }
+#login-form legend{ font: 16px/1 Constantia, Georgia, serif; color: #333; }
+#login-form .field { margin: 15px 0; font-size: 11px; }
+#login-form .field label+div { margin-top: 3px; }
+#login-form .field input { width: 98%; }
+#login-form .formControls { text-align: right; }
+#login-form .formControls input { font-size: 13px; padding: 1px 10px; margin: 0; }
+#login-form>div>div>div { width: 280px; }
+
+.inf-panels-list { margin: 0 -35px; text-align: center; }
+.inf-panels-list>a { display: inline-block; width: 198px; min-height: 100px; overflow: hidden; font-size: 12px; margin: 0 12px 40px 12px; text-align: left;
+padding: 5px 10px; text-decoration: none; background: #eee; color: #333; vertical-align: top;
+border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -khtml-border-radius: 3px;
+-o-transition: 0.3s; -webkit-transition: 0.3s; -moz-transition: 0.3s; -khtml-transition: 0.3s; transition: 0.3s; }
+.inf-panels-list>a:hover{ background: #d0e9fd; color: #333; }
+.inf-panels-list img { max-width: 90px; float: left; margin: 4px 10px 4px 0; border-top: 1px solid #aaa; border-bottom:  1px solid white; 
+	border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -khtml-border-radius: 2px; }
+.inf-panels-list span { overflow: hidden; margin: 0; display: block; color: #333; }
+.inf-panels-list .header { margin-bottom: 5px; color: black; font: 14px Constantia, Georgia, serif; text-decoration: underline; }
+
+
+/* АДМИНКО */
+.contentViews, .contentViews li a, .contentViews li a:hover, .contentViews .selected a,
+.contentActions
+{ border: none; background: none; margin: 0; padding: 0; }
+#content-views  { text-align: right; position: relative; z-index: 1; margin: 0 0 -4px; }
+#content-views>li { display: inline-block; font-size: 11px; margin: 0 5px; }
+#content-views>li a { color: #5f780b }
+#content-views>.selected { background: #d9cebf; padding: 2px 5px 2px; font-size: 12px; font-weight: bold; 
+border-radius: 3px 3px 0 0; -webkit-border-radius: 3px 3px 0 0;  -moz-border-radius: 3px 3px 0 0;  -khtml-border-radius: 3px 3px 0 0; 
+box-shadow: 0 -1px 2px #ccc; -webkit-box-shadow: 0 -1px 2px #ccc; -moz-box-shadow: 0 -1px 2px #ccc; -khtmlbox-shadow: 0 -1px 2px #ccc; }
+#content-views>.selected a { text-decoration: none; color: #333; }
+
+.contentActions+.shadowed h1 { padding-top: 21px; }
+
+.contentActions { position: absolute; width: 100%; }
+#contentActionMenus { margin: 4px 5px 0; font-size: 12px; float: none; position: relative; z-index: 1; background: #d9cebf; height: 25px;
+border-radius: 3px 3px 0 0; -webkit-border-radius: 3px 3px 0 0;  -moz-border-radius: 3px 3px 0 0;  -khtml-border-radius: 3px 3px 0 0; border-bottom: 1px solid #ae916a; }
+#contentActionMenus>li { float: left; position: relative; margin: 4px 5px 0; border: 1px solid transparent; border-bottom-width: 0px; list-style-type: none;
+border-radius: 3px 3px 0 0; -webkit-border-radius: 3px 3px 0 0;  -moz-border-radius: 3px 3px 0 0;  -khtml-border-radius: 3px 3px 0 0; }
+#contentActionMenus>li a { text-decoration: none; color: #333; padding: 0; }
+#contentActionMenus dt { padding: 1px 6px 1px;  }
+#contentActionMenus dd { display: none; margin: 0 0 0 -1px; position: absolute; background: #e9ddcc; min-width: 100%;
+border-radius: 0 0 3px 3px; -webkit-border-radius: 0 0 3px 3px;  -moz-border-radius: 0 0 3px 3px;  -khtml-border-radius: 0 0 3px 3px;
+box-shadow: 1px 1px 2px white; -webkit-box-shadow: 1px 1px 2px white; -moz-box-shadow: 1px 1px 2px white; -khtmlbox-shadow: 1px 1px 2px white; }
+border: 1px solid #ae916a; border-top: none; }
+#contentActionMenus ul { margin: 0; padding: 10px; }
+#contentActionMenus>li:hover { background: #e9ddcc; border-color: #ae916a; }
+#contentActionMenus>li:hover dd { display: block; }

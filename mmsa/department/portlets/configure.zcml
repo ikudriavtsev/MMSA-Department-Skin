@@ -1,0 +1,54 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:plone="http://namespaces.plone.org/plone">
+
+ <include package="plone.app.portlets" />
+ <include package="plone.portlet.static" />
+
+ <plone:portletRenderer 
+     portlet="plone.app.portlets.portlets.login.ILoginPortlet" 
+     layer="..browser.interfaces.IThemeSpecific" 
+     template="mmsa_login.pt" 
+     />     
+<plone:portletRenderer 
+     portlet="plone.app.portlets.portlets.calendar.ICalendarPortlet" 
+     layer="..browser.interfaces.IThemeSpecific" 
+     template="mmsa_calendar.pt" 
+     />     
+<plone:portletRenderer 
+     portlet="plone.app.portlets.portlets.events.IEventsPortlet" 
+     layer="..browser.interfaces.IThemeSpecific" 
+     template="mmsa_events.pt" 
+     />     
+<plone:portletRenderer 
+     portlet="plone.app.portlets.portlets.language.ILanguagePortlet" 
+     layer="..browser.interfaces.IThemeSpecific" 
+     template="mmsa_language.pt" 
+     />     
+<plone:portletRenderer 
+     portlet="plone.app.portlets.portlets.navigation.INavigationPortlet" 
+     layer="..browser.interfaces.IThemeSpecific" 
+     template="mmsa_navigation.pt" 
+     />     
+<plone:portletRenderer 
+     portlet="plone.app.portlets.portlets.recent.IRecentPortlet" 
+     layer="..browser.interfaces.IThemeSpecific" 
+     template="mmsa_recent.pt" 
+     />     
+<plone:portletRenderer 
+     portlet="plone.app.portlets.portlets.search.ISearchPortlet" 
+     layer="..browser.interfaces.IThemeSpecific" 
+     template="mmsa_search.pt" 
+     />
+<plone:portlet
+         name="MMSAStatic"
+         interface=".mmsa_static.IStaticPortlet"
+         assignment=".mmsa_static.Assignment"
+         view_permission="zope2.View"
+         edit_permission="plone.portlet.static.AddStaticPortlet"
+         renderer=".mmsa_static.Renderer"
+         addview=".mmsa_static.AddForm"
+         editview=".mmsa_static.EditForm"
+         />
+
+ </configure>

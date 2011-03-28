@@ -1,0 +1,7 @@
+			<div><div class="left"></div><div class="right"></div>
+					<form tal:attributes="action string:${context/@@plone_portal_state/navigation_root_url}/search" class="search" 							method="get">
+					<p>
+						<input type="text" name="SearchableText" />
+						<button type="submit">&nbsp;<span>&raquo;</span></button></p>
+				</form>
+			</div>

@@ -1,0 +1,15 @@
+<div><div class="left"></div><div class="right"></div>
+	<ul class="language">
+		<li tal:repeat="language view/languages">
+		<tal:block define="selected language/selected;
+				   code language/code;
+				   name language/native|language/name;
+				   flag language/flag|nothing">
+				   <img src="" alt="" class="" tal:attributes="class python: selected and 'selected' or '';
+				        src python: path('language/pic') and language['pic'] or string('${view/port_url}${flag}')" />
+		<a href="" tal:omit-tag="selected" tal:content="name"
+			tal:attributes="href language/url">language</a>
+		</tal:block>
+		</li>
+	</ul>
+</div>

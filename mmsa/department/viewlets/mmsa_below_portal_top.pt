@@ -1,0 +1,5 @@
+<tal:block i18n:domain="plone">
+ <tal:block repeat="tab view/portal_tabs">
+      <h2 tal:condition="python:view.selected_portal_tab==tab['id']" tal:content="tab/name">folder name</h2>
+ </tal:block>
+</tal:block>
