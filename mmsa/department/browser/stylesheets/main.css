@@ -16,7 +16,7 @@ img{border:0px;}
 
 html, body { margin: 0; height: 100%; }
 
-body { font: 14px/1.4 Segoe UI, Arial, sans-serif; background: url(++resource++mmsa.department.images/bgTop.png) top repeat-x; }
+body { font: 14px/1.4 Segoe UI, Arial, sans-serif; background: url(++resource++mmsa.department.images/theme/bgTop.png) top repeat-x; }
 
 a { color: #0080ff; }
 a:hover { color: #0052c9; }
@@ -37,7 +37,7 @@ p { margin: 10px 0; }
 
 h1 { padding: 0; margin: 0 0 20px; color: #ff8000; font-size: 20px; font-style: italic; }
 
-.path { color: black; color: #bbb; font-size: 12px; font-family: Calibri; margin: 0 20px 5px;  }
+.path { color: black; color: #bbb; font-size: 12px; font-family: Calibri, Arial, sans-serif; margin: 0 20px 5px;  }
 .path h2 { display: inline; font-size: 16px; color: black; }
 .path span { color: #777; font-family: Segoe UI, Arial, sans-serif; }
 .path a { padding: 1px 3px; color: #555; font-family: Segoe UI, Arial, sans-serif; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; }
@@ -46,11 +46,11 @@ h1 { padding: 0; margin: 0 0 20px; color: #ff8000; font-size: 20px; font-style: 
 
 .main { padding: 60px 0 90px; }
 .centred { margin: 0 auto; max-width: 1200px; width: 90%; }
-.holder { background: url(++resource++mmsa.department.images/bgBottom.png) bottom repeat-x; min-height: 100%; margin-bottom: -40px; position: relative; min-width: 980px; }
+.holder { background: url(++resource++mmsa.department.images/theme/bgBottom.png) bottom repeat-x; min-height: 100%; margin-bottom: -40px; position: relative; min-width: 980px; }
 
 .content { padding: 20px 325px 80px 25px; }
 
-.footer { background: url(++resource++mmsa.department.images/footerLine.png) top center no-repeat; width: 100%; text-align: center; height: 40px; line-height: 39px; position: relative; }
+.footer { background: url(++resource++mmsa.department.images/theme/footerLine.png) top center no-repeat; width: 100%; text-align: center; height: 40px; line-height: 39px; position: relative; }
 .footer li { display: inline; }
 .footer a { color: #262626; font-size: 12px; margin: 10px }
 
@@ -58,15 +58,15 @@ h1 { padding: 0; margin: 0 0 20px; color: #ff8000; font-size: 20px; font-style: 
 .prolog div { float: left; margin: 0 5px 0 25px; position: relative; display: block; }
 
 .prolog div div { float: none; margin: auto; }
-.prolog .left { height: 37px; width: 5px; position: absolute; top: 0; left: -5px; background: url(++resource++mmsa.department.images/prologPanel.png) top left; }
-.prolog .right { height: 37px; width: 5px; position: absolute; top: 0; right: -5px; background: url(++resource++mmsa.department.images/prologPanel.png) top right; }
+.prolog .left { height: 37px; width: 5px; position: absolute; top: 0; left: -5px; background: url(++resource++mmsa.department.images/theme/prologPanel.png) top left; }
+.prolog .right { height: 37px; width: 5px; position: absolute; top: 0; right: -5px; background: url(++resource++mmsa.department.images/theme/prologPanel.png) top right; }
 
-.prolog .language { font-size: 11px; padding: 8px 3px 10px 1px; line-height: 22px; background: url(++resource++mmsa.department.images/prologBg.png); height: 19px; }
+.prolog .language { font-size: 11px; padding: 8px 3px 10px 1px; line-height: 22px; background: url(++resource++mmsa.department.images/theme/prologBg.png); height: 19px; }
 .prolog .language li { display: inline; margin: 0 5px; }
 .prolog .language li img { width: 19px; height: 16px; vertical-align: -5px; opacity: .3 }
 .prolog .language li .selected { opacity: 1 }
 
-.search { font-size: 12px; padding: 0; line-height: 1; background: url(++resource++mmsa.department.images/prologBg.png); height: 37px; position: relative; width: 220px; }
+.search { font-size: 12px; padding: 0; line-height: 1; background: url(++resource++mmsa.department.images/theme/prologBg.png); height: 37px; position: relative; width: 220px; }
 .search p { margin: 0; }
 .search input { width: 162px; padding: 0; font-size: 12px; margin: 0; height: 16px;
 line-height: 1; position: absolute; left: 7px; top: 10px; }
@@ -77,14 +77,14 @@ html:not([lang*=""]):not(:only-child) .prolog .search button span { top: -4px; }
 
 .prolog .auth { position: absolute; right: 0; top: 100%; margin-top: 10px; }
 .prolog .auth>a { margin-left: 7px; }
-.login-link { background: url(++resource++mmsa.department.images/login.png) left center no-repeat; padding-left: 12px; line-height: 12px; padding-bottom: 3px; font-size: 12px; color: #0080ff; opacity: .5; }
+.login-link { background: url(++resource++mmsa.department.images/theme/login.png) left center no-repeat; padding-left: 12px; line-height: 12px; padding-bottom: 3px; font-size: 12px; color: #0080ff; opacity: .5; }
 .login-link:hover { opacity: 1; }
-.logout-link { background: url(++resource++mmsa.department.images/logout.png) left center no-repeat; padding-left: 15px; line-height: 12px; padding-bottom: 3px; font-size: 12px; color: #0080ff; opacity: .5; }
+.logout-link { background: url(++resource++mmsa.department.images/theme/logout.png) left center no-repeat; padding-left: 15px; line-height: 12px; padding-bottom: 3px; font-size: 12px; color: #0080ff; opacity: .5; }
 .logout-link:hover { opacity: 1; }
-.profile-link { background: url(++resource++mmsa.department.images/profile.png) left center no-repeat; padding-left: 14px; line-height: 12px; padding-bottom: 3px; font-size: 12px; color: #ff8000; opacity: .5; }
+.profile-link { background: url(++resource++mmsa.department.images/theme/profile.png) left center no-repeat; padding-left: 14px; line-height: 12px; padding-bottom: 3px; font-size: 12px; color: #ff8000; opacity: .5; }
 .profile-link:hover { opacity: 1; color: #ff8000 }
 
-.bubble { background: url(++resource++mmsa.department.images/blackTranspBg.png); min-height: 100%; position: fixed; top: 0; left: 0; width: 100%; z-index: 200; display: none; }
+.bubble { background: url(++resource++mmsa.department.images/theme/blackTranspBg.png); min-height: 100%; position: fixed; top: 0; left: 0; width: 100%; z-index: 200; display: none; }
 .bubble>div { display: table-row; }
 .bubble>div>div { display: table-cell; vertical-align: middle; }
 .bubble>div>div>div { background: #d9cebf; border-radius: 3px; -khtml-border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; padding: 18px 20px; margin: 0 auto; width: 40%; position: relative; }
@@ -100,9 +100,9 @@ border-radius: 21px; -moz-border-radius: 21px; -webkit-border-radius: 21px; -kht
 .twoColums .right { float: right; width: 253px; padding-top: 29px; }
 
 
-#metabanner { height: 170px; background: url(++resource++mmsa.department.images/metabaner.png) repeat-x; position: relative; padding-top: 5px; margin: 0 auto; }
-#metabanner .corners i { display: block; width: 22px; height: 170px; position: absolute; left: -22px; top: 0px; background: url(++resource++mmsa.department.images/metabanerCorners.png) left; }
-#metabanner .corners b { display: block; width: 22px; height: 170px; position: absolute; right: -22px; top: 0px; background: url(++resource++mmsa.department.images/metabanerCorners.png) right; }
+#metabanner { height: 170px; background: url(++resource++mmsa.department.images/theme/metabaner.png) repeat-x; position: relative; padding-top: 5px; margin: 0 auto; }
+#metabanner .corners i { display: block; width: 22px; height: 170px; position: absolute; left: -22px; top: 0px; background: url(++resource++mmsa.department.images/theme/metabanerCorners.png) left; }
+#metabanner .corners b { display: block; width: 22px; height: 170px; position: absolute; right: -22px; top: 0px; background: url(++resource++mmsa.department.images/theme/metabanerCorners.png) right; }
 #metabanner .inside { height: 160px; margin: 0 -17px; position: relative; overflow: hidden; }
 #metabanner .inside div { display: none; position: absolute; height: 160px; width: 100%; left: 0px; top: 0px; }
 #metabanner .inside .current { display: block; }
@@ -117,20 +117,20 @@ border-radius: 21px; -moz-border-radius: 21px; -webkit-border-radius: 21px; -kht
 #metabanner a { color: white; }
 #metabanner ol { color: #ccc; line-height: 1.3; font-size: 14px; position: absolute; right: 50px; bottom: 30px; line-height: 20px; padding: 7px 30px; margin: 0; }
 
-#metabanner ol, #metabanner .text { font-size: 13px; border-radius: 3px; -khtml-border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; background: url(++resource++mmsa.department.images/blackTranspBg.png); }
+#metabanner ol, #metabanner .text { font-size: 13px; border-radius: 3px; -khtml-border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; background: url(++resource++mmsa.department.images/theme/blackTranspBg.png); }
 
 #metabanner .text h3 { display: inline; }
 #metabanner .text { position: absolute; color: white; line-height: 1.2;  width: 300px; padding: 5px 10px 10px; right: 50px; bottom: 30px; margin: 0; }
 
-#metabanner .world { background: url(metabanner/facultets.png) center; }
-#metabanner .facultets { background: url(metabanner/1.png) center; }
-#metabanner .k14 { background: url(metabanner/14.png) center; }
-#metabanner .k26 { background: url(metabanner/26.png) center; }
-#metabanner .k35 { background: url(metabanner/35.png) center; }
+#metabanner .world { background: url(++resource++mmsa.department.images/metabanner/facultets.png) center; }
+#metabanner .facultets { background: url(++resource++mmsa.department.images/metabanner/1.png) center; }
+#metabanner .k14 { background: url(++resource++mmsa.department.images/metabanner/14.png) center; }
+#metabanner .k26 { background: url(++resource++mmsa.department.images/metabanner/26.png) center; }
+#metabanner .k35 { background: url(++resource++mmsa.department.images/metabanner/35.png) center; }
  
-#metabanner_prev { position: absolute; z-index: 5; bottom: 10px; left: -17px; font: bold 18px Calibri, Arial; text-decoration: none; background: url(++resource++mmsa.department.images/blackTranspBg.png);  padding: 2px 5px;
+#metabanner_prev { position: absolute; z-index: 5; bottom: 10px; left: -17px; font: bold 18px Calibri, Arial; text-decoration: none; background: url(++resource++mmsa.department.images/theme/blackTranspBg.png);  padding: 2px 5px;
 border-radius: 0 3px 0 0; -khtml-border-radius: 0 3px 0 0; -moz-border-radius: 0 3px 0 0; -webkit-border-radius:  0 3px 0 0; }
-#metabanner_next { position: absolute; z-index: 5; bottom: 10px; right: -17px; font: bold 18px Calibri, Arial; text-decoration: none; background: url(++resource++mmsa.department.images/blackTranspBg.png); padding: 2px 5px; 
+#metabanner_next { position: absolute; z-index: 5; bottom: 10px; right: -17px; font: bold 18px Calibri, Arial; text-decoration: none; background: url(++resource++mmsa.department.images/theme/blackTranspBg.png); padding: 2px 5px; 
 border-radius: 3px 0 0 0; -khtml-border-radius: 3px 0 0 0; -moz-border-radius: 3px 0 0 0; -webkit-border-radius: 3px 0 0 0; }
 .section { overflow: hidden; margin: 35px 0; font-size: 14px; }
 .section .l { float: left; width: 45%; }
@@ -143,7 +143,7 @@ border-radius: 3px 0 0 0; -khtml-border-radius: 3px 0 0 0; -moz-border-radius: 3
 #courses .stages { width: 100%; }
 #courses .stages td { text-align: center; width: 17%; }
 #courses .stages a { text-decoration: none; color: #959595; font-size: 11px; display: inline-block; vertical-align: top; padding: 10px 4px 4px; height: 73px; }
-#courses .stages span { width: 38px; height: 38px; display: inline-block; color: white; font-size: 10px; text-align: center; margin: 0 auto; background: url(++resource++mmsa.department.images/course.png); }
+#courses .stages span { width: 38px; height: 38px; display: inline-block; color: white; font-size: 10px; text-align: center; margin: 0 auto; background: url(++resource++mmsa.department.images/theme/course.png); }
 #courses .stages span b { font: 30px Constantia, Georgia, serif; display: block; line-height: 24px; }
 #courses .stages strong { font-size: 11px; font-weight: normal; color: black; }
 #courses .stages .first { text-align: left; width: auto; padding-left: 0; white-space: nowrap; }
@@ -177,9 +177,9 @@ border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-
 #courses .column li a { text-decoration: none; }
 #courses .column li a:hover { text-decoration: underline; }
 
-.panel { position: relative; margin-bottom: 40px; background: url(++resource++mmsa.department.images/panel.png); padding: 5px 10px 5px 20px; width: 223px; // zoom: 1; }
-.panel .corners i { display: block; width: 100%; height: 6px; background: url(++resource++mmsa.department.images/panelCorners.png) top; position: absolute; top: -6px; left: 0px; }
-.panel .corners b { display: block; width: 100%; height: 6px; background: url(++resource++mmsa.department.images/panelCorners.png) bottom;  position: absolute; bottom: -6px; left: 0px;  }
+.panel { position: relative; margin-bottom: 40px; background: url(++resource++mmsa.department.images/theme/panel.png); padding: 5px 10px 5px 20px; width: 223px; // zoom: 1; }
+.panel .corners i { display: block; width: 100%; height: 6px; background: url(++resource++mmsa.department.images/theme/panelCorners.png) top; position: absolute; top: -6px; left: 0px; }
+.panel .corners b { display: block; width: 100%; height: 6px; background: url(++resource++mmsa.department.images/theme/panelCorners.png) bottom;  position: absolute; bottom: -6px; left: 0px;  }
 
 .login { height: 141px; font-size: 11px; }
 .login p { overflow: hidden; margin: 0 0 13px; }
@@ -193,21 +193,28 @@ border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-
 .logged a { font-size: 12px; line-height: 30px; }
 
 .events { font-size: 11px; color: #333333; }
-.events p { margin-bottom: 5px; font-size: 12px; }
+.events h4 { font-size: 14px; }
+.events p { margin: 5px 0; font-size: 12px; }
 .events .navi { margin: 15px 0 5px; }
 .events .navi span { font-family: Calibri; }
 .events .navi a { color: #ff6100; }
-.events>.twitt { overflow: hidden; margin-bottom: 20px; margin-left: -5px; }
-.events>.twitt>div { overflow: hidden; }
-.events p { margin: 2px 0; }
-.events h6 { color: black; margin: 0; }
-.events h6 span { color: #666; font: 10px Segoe UI, arial, sans-serif; }
-.events .date { font-size: 10px; color: #666; }
-.events>.twitt>img { float: left; margin: 2px 5px 2px 0; border-top: 1px solid #bbb; border-bottom:  1px solid white; 
-	border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -khtml-border-radius: 2px; }
-.retweet { background: url(++resource++mmsa.department.images/retweet.png) no-repeat; width: 10px; height: 6px; display: inline-block; margin-right: 2px; }
 
-.rss { background: url(++resource++mmsa.department.images/rss.png); display: block; width: 20px; height: 20px; }
+#twitter { margin-bottom: -15px; }
+#twitter .date { font-size: 10px; color: #666; }
+#twitter .date a { text-decoration: none; color: #666; }
+#twitter p { margin: 2px 0; }
+#twitter h6 { margin: 0; }
+#twitter h6 a { color: black; text-decoration: none; margin: 0; }
+#twitter h6 span { color: #666; font: 10px Segoe UI, Arial, sans-serif; }
+.retweet { background: url(++resource++mmsa.department.images/theme/retweet.png) no-repeat; width: 10px; height: 6px; display: inline-block; margin-right: 2px; }
+#twitter img { float: left; margin: 2px 5px 2px 0; border-top: 1px solid #bbb; border-bottom:  1px solid white; 
+	border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -khtml-border-radius: 2px; }
+#twitter li { overflow: hidden; margin-bottom: 20px; margin-left: -5px; }
+#twitter li div { overflow: hidden; }
+#twitter a { text-decoration: none; }
+#twitter a:hover { text-decoration: underline; }
+
+.rss { background: url(++resource++mmsa.department.images/theme/rss.png); display: block; width: 20px; height: 20px; }
 .panel .rss { position: absolute; top: 5px; right: 10px;  }
 
 .pay { padding: 0 20px; }
@@ -220,15 +227,15 @@ border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-
 .menu { text-align: center; border-bottom: 2px solid #d9cebf; font: 15px/23px Constantia, Georgia, serif; margin-top: 14px; position: relative; height: 28px; }
 .menu li { display: inline-block; margin: 0 20px 0 0; padding-left: 20px; position: relative; vertical-align: 0; }
 .menu a { text-decoration: none; color: black; position: relative; z-index: 10; }
-.menu .curr { background: url(++resource++mmsa.department.images/mainMenu.gif) left; vertical-align: -5px; display: inline-block; // display: inline; height: 23px; }
-.menu .curr>a {  background: url(++resource++mmsa.department.images/mainMenu.gif) right; margin-right: -15px; padding-right: 20px; color: #404040; display: inline-block; height: 23px; }
-.menu .sel { padding-left: 20px; position: relative; background: url(++resource++mmsa.department.images/mainMenu.gif) left; vertical-align: -5px; display: inline-block; // display: inline; height: 23px; }
-.menu .sel>a {  background: url(++resource++mmsa.department.images/mainMenu.gif) right; margin-right: -15px; padding-right: 20px; color: #404040; display: inline-block; height: 23px; }
+.menu .curr { background: url(++resource++mmsa.department.images/theme/mainMenu.gif) left; vertical-align: -5px; display: inline-block; // display: inline; height: 23px; }
+.menu .curr>a {  background: url(++resource++mmsa.department.images/theme/mainMenu.gif) right; margin-right: -15px; padding-right: 20px; color: #404040; display: inline-block; height: 23px; }
+.menu .sel { padding-left: 20px; position: relative; background: url(++resource++mmsa.department.images/theme/mainMenu.gif) left; vertical-align: -5px; display: inline-block; // display: inline; height: 23px; }
+.menu .sel>a {  background: url(++resource++mmsa.department.images/theme/mainMenu.gif) right; margin-right: -15px; padding-right: 20px; color: #404040; display: inline-block; height: 23px; }
 
 .menu .curr .secondMenu { display: block; }
 .secondMenu { display: none; position: absolute; left: 50%; // bottom: -21px; margin: 2px 0 0 8px; }
-.secondMenu div { position: relative; left: -50%; background: url(++resource++mmsa.department.images/secondMenu.gif) top left no-repeat; padding-left: 20px; height: 23px; }
-.secondMenu .w { position: static; background: url(++resource++mmsa.department.images/secondMenu.gif) bottom right no-repeat; padding: 0 10px 0 0; height: 23px; }
+.secondMenu div { position: relative; left: -50%; background: url(++resource++mmsa.department.images/theme/secondMenu.gif) top left no-repeat; padding-left: 20px; height: 23px; }
+.secondMenu .w { position: static; background: url(++resource++mmsa.department.images/theme/secondMenu.gif) bottom right no-repeat; padding: 0 10px 0 0; height: 23px; }
 .secondMenu ul { white-space: nowrap; font: 13px/23px Segoe UI, Arial, sans-serif; color: #404040; padding: 0; background: #d9cebf; }
 .secondMenu li { margin: 0 10px 0 0; padding: 0; }
 .secondMenu a { text-decoration: underline; color: black; position: relative; top: -1px; }
@@ -238,15 +245,16 @@ border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-
 .jsBg .sel a { display: block; }
 
 .page { padding-top: 30px; overflow-x: hidden; }
-.page h1 { margin-left: 30px; }
-.info_mmsa { background: url(++resource++mmsa.department.images/bgInside.png) top repeat-x; min-height: 400px; }
+.page>.centred>.logo { margin-left: 30px; }
+.info_mmsa { background: url(++resource++mmsa.department.images/theme/bgInside.png) top repeat-x; min-height: 400px; }
 
 .info_mmsa .left, .info_mmsa .right { font-size: 12px; max-width: 15%; margin-top: 15px; min-width: 12%; }
 .info_mmsa .left h4, .info_mmsa .right h4 { font-style: italic; margin: 10px 0 10px 0; } 
 .info_mmsa .left h5, .info_mmsa .right h5 { font-style: italic; margin: 15px 0 5px 10px; font-size: 12px; }
 .info_mmsa .left ul h5, .info_mmsa .right ul h5, .info_mmsa .left li>ul, .info_mmsa .right li>ul { margin-left: 0; }
 .info_mmsa .left ul+h5, .info_mmsa .right ul+h5 { margin-top: -15px; }
-.info_mmsa .left ul, .info_mmsa .right ul { margin: 0 0 40px 10px; line-height: 1.5; }
+.info_mmsa .left ul, .info_mmsa .right ul { margin: 0 0 25px 10px; line-height: 1.5; }
+.info_mmsa .left li, .info_mmsa .right li { margin: 5px 0 }
 .info_mmsa .left .selected { background: #d9cebf; padding: 3px 5px 4px; display: inline-block; line-height: 1; margin: 5px 0; color: #404040;
 	border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -khtml-border-radius: 3px; }
  
@@ -266,9 +274,9 @@ table.plain, table.plain td, table.plain th { padding: 5px; }
  
 .shadowed { position: relative; padding: 18px; min-height: 400px; }
 .shadowed>div { background: white; padding: 0 7px; }
-.shadowed .s b{ background: url(++resource++mmsa.department.images/shadow.png) top repeat-y; display: block; height: 18px; position: absolute; top: 0px; left: 18px; right: 18px; }
-.shadowed .s i{ background: url(++resource++mmsa.department.images/shadow.png) left -18px no-repeat; display: block; width: 18px; position: absolute; top: 0px; left: 0px; height: 500px; }
-.shadowed .s s{ background: url(++resource++mmsa.department.images/shadow.png) right -18px no-repeat; display: block; width: 18px; position: absolute; top: 0px; right: 0px; height: 500px; }
+.shadowed .s b{ background: url(++resource++mmsa.department.images/theme/shadow.png) top repeat-y; display: block; height: 18px; position: absolute; top: 0px; left: 18px; right: 18px; }
+.shadowed .s i{ background: url(++resource++mmsa.department.images/theme/shadow.png) left -18px no-repeat; display: block; width: 18px; position: absolute; top: 0px; left: 0px; height: 500px; }
+.shadowed .s s{ background: url(++resource++mmsa.department.images/theme/shadow.png) right -18px no-repeat; display: block; width: 18px; position: absolute; top: 0px; right: 0px; height: 500px; }
 
 .info_mmsa .mid { font: 14px/1.4 Segoe UI, Arial, sans-serif; }
 .info_mmsa h3 { color: black; margin-top: 5px; font: 24px Constantia, Georgia, serif; }
@@ -279,7 +287,9 @@ table.plain, table.plain td, table.plain th { padding: 5px; }
  max-width: 250px;
  }
 .text-image.r { margin: 5px 0 10px 20px; float: right; }
-.text-image img { display: block; margin-bottom: 4px; margin: 0 auto; }
+.text-image img { display: block; margin-bottom: 4px; margin: 0 auto; max-width: 230px; }
+.text-image.f { max-width: none; }
+.text-image.f img { max-width: none; }
 
 .threeColumns { padding-bottom: 80px; }
 .threeColumns .left { float: left; margin-right: 32px; margin-top: 75px; }
